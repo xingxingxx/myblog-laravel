@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-watch": "^4.3.6"
+  },
+  "dependencies": {
+    "laravel-elixir": "^4.0.0",
+    "bootstrap-sass": "^3.0.0"
+  }
+}
