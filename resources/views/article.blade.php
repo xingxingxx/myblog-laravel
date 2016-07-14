@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layouts.home')
 
 @section('content')
     <div class="container mt25">
@@ -48,7 +48,7 @@
                 <ul class="pager">
                     <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span>Composer 终于走到了 v1.0 版本</a></li>
                     <li class="next"><a href="#">Lumen 5.2 正式发布 <span aria-hidden="true">&rarr;</span></a></li>
-                  </ul>
+                </ul>
             </div>
         </div>
     </div>

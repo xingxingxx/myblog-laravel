@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layouts.home')
 
 @section('content')
     <div class="container mt25">
@@ -40,10 +40,10 @@
             <!--右侧文章列表-->
             <div class="jumbotron">
                 @foreach ($list as $vo)
-                <h3><a href="{{ url('/article/id/'.$vo->tid) }}">{{$vo->title}}</a></h3>
+                <h3><a href="{{ url('/article/'.$vo->tid) }}">{{$vo->title}}</a></h3>
                 <p class="font16"> 作者：肖兴平 &nbsp;&nbsp; {{$vo->create_at}} &nbsp;&nbsp; 点击：{{$vo->click}} &nbsp;&nbsp; 评论：123 </p>
                 <p class="font16"> {{ str_limit(html_entity_decode($vo->content),400)}}</p>
-                <p><a class="btn btn-primary" href="{{ url('/article/id/'.$vo->tid) }}">阅读全文</a></p>
+                <p><a class="btn btn-primary" href="{{ url('/article/'.$vo->tid) }}">阅读全文</a></p>
                 <hr>
                 @endforeach
             </div>
