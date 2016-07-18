@@ -39,9 +39,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="/">首页</a></li>
-                        <li><a href="#">互联网新闻</a></li>
                         <li><a href="#">发现</a></li>
-                        <li><a href="#">站内文章</a></li>
                         <li><a href="#">教程</a></li>
                         <li><a href="#">关于我</a></li>
                     </ul>
@@ -55,7 +53,12 @@
             </div>
             <div class="no-boxshadow-nav"></div>
         </nav>
-        @yield('content')
+        <div class="container mt25">
+           @include('layouts.aside')
+           <div class="main">
+               @yield('content')
+            </div>
+        </div>
         <footer>
         Copyright © 2009-2013 YiXieShi. 肖兴平 版权所有<br>
         粤ICP备09139612号

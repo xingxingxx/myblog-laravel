@@ -71,17 +71,18 @@ Route::get('/age/refuse',['as'=>'refuse',function(){
     return "未成年人禁止入内！";
 }]);*/
 
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
-    Route::get('/', [
-		'uses' => 'HomeController@index',
-		'as' => 'home'
-	]);
-	Route::get('article/{id}', 'ArticleController@index')->where('id', '[0-9]+');
-	// Admin
-	Route::get('admin', [
-		'uses' => 'AdminController@admin',
-		'as' => "admin",
-		'middleware' => 'auth'
-	]);
-});
+Route::auth();
+Route::get('/', [
+    'uses' => 'HomeController@index',
+    'as' => 'home'
+]);
+//Route::get('article/{id}', 'ArticleController@index')->where('id', '[0-9]+');
+// Admin
+/*	Route::group(['middleware' => 'web'], function (){
+
+});*/
+Route::get('admin', [
+    'uses' => 'AdminController@admin',
+    'as' => "admin"
+]);
+Route::resource('articles','ArticleController');

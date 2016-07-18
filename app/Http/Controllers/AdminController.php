@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
+use App\Models\Article;
 use App\Http\Requests;
 
 class AdminController extends Controller
 {
     //
     public function admin(){
-        return view('admin.index');
+
+        $list=Article::paginate(15);
+        return view('admin.index',['list'=>$list]);
     }
 }

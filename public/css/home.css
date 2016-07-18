@@ -6557,9 +6557,15 @@ footer {
 .mt25 {
   margin-top: 15px;
 }
+.mb10 {
+  margin-bottom: 5px;
+}
 .font16 {
   font-size: 14px !important;
   line-height: 2.2;
+}
+.mt-30 {
+  margin-top: -30px;
 }
 .font16 img {
   width: 100%;

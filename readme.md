@@ -25,3 +25,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+##项目需求
+
+ - 前端，展示博文，游客评论
+ - 后端，文章的编辑（MarkDown模式），显示文章评论并可以回复、管理文章提供分类管理和标签管理、文章的搜索、设置文章的访问权限，文章可以导出为pdf，wrod等各种格式。

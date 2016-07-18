@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $list=Article::all();
+        $list=Article::paginate(15);
         return view('home',['list'=>$list]);
     }
 }

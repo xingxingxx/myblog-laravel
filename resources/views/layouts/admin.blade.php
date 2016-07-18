@@ -94,5 +94,8 @@
     </div>
     <script src="js/vendor/jquery-1.11.3.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.hotkeys.js"></script>
+    <script src="js/vendor/bootstrap-wysiwyg.js"></script>
+    <script src="js/admin.js"></script>
     </body>
 </html>
