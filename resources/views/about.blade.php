@@ -11,7 +11,6 @@
         <link rel="apple-touch-icon" href="favicon.ico">
         <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="{{ elixir('css/home.css') }}">
-        @yield('head')
     </head>
     <body>
         <!--[if lt IE 9]>
@@ -26,16 +25,24 @@
         <![endif]-->
         @include('layouts.navbar')
         <div class="container mt25">
-           @include('layouts.aside')
-           <div class="main">
-               @yield('content')
+            <!--右侧文章列表-->
+            <div class="jumbotron">
+                <p class="font16">
+                    姓名：肖兴平<br>
+                    邮箱：<a href="Mailto:xx9815@qq.com">xx915@qq.com</a><br>
+                    github：<a target="_blank" href="https://github.com/xingxingxx">https://github.com/xingxingxx</a><br>
+                    微博：<a target="_blank" href="http://weibo.com/u/3026783454">http://weibo.com/u/3026783454</a><br>
+                    自己写的玩的一个个人博客，基于laravel框架,前端在bootstrap的基础上做的定制<br>
+                    很多地方还没有完成，后台系统，基本上现在只是做了下文章的增删改，所以后期还会进一步完善。<br>
+                    我已经将博客的源码放到github上<a target="_blank" href="https://github.com/xingxingxx/myblog-laravel">https://github.com/xingxingxx/myblog-laravel</a>，随时可以获取。
+                </p>
+                <hr>
             </div>
         </div>
         <footer>
         Copyright © 2009-2013 YiXieShi. 肖兴平 版权所有<br>
         粤ICP备09139612号
         </footer>
-
         <script src="js/vendor/jquery-1.11.3.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
     </body>

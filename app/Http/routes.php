@@ -76,6 +76,18 @@ Route::get('/', [
     'uses' => 'HomeController@index',
     'as' => 'home'
 ]);
+Route::get('order/{order?}/sign/{sign?}', [
+    'uses' => 'HomeController@index',
+    'as' => 'order'
+]);
+Route::get('about',function (){
+    return view('about',['active'=>'about']);
+});
+Route::post('search',[
+    'uses' => 'HomeController@search',
+    'as' => 'search'
+]);
+
 //Route::get('article/{id}', 'ArticleController@index')->where('id', '[0-9]+');
 // Admin
 /*	Route::group(['middleware' => 'web'], function (){

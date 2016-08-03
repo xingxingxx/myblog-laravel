@@ -2,10 +2,10 @@
 @section('content')
 {{--头部搜索--}}
 <form class="form-inline">
-    <div class="form-group">
+    {{--<div class="form-group">
         <label for="exampleInputName2">关键词/标签/分类</label>
         <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-    </div>
+    </div>--}}
 </form>
 <p><a class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">新增文章</a></p>
 {{--文章列表--}}
@@ -22,12 +22,12 @@
         <td>{{ $vo->id }}</td>
         <td><a class="edit-data" data-id="{{ $vo->id }}">{{ $vo->title }}</a></td>
         <td>{{ $vo->sign}}</td>
-        <td>{{ $vo->create_at }}</td>
+        <td>{{ $vo->created_at }}</td>
         <td>
             <a class="btn btn-xs btn-primary edit-data" data-id="{{ $vo->id }}" data-toggle="tooltip" data-placement="left" title="编辑文章">
                 <i class="glyphicon glyphicon-edit"></i>
             </a>
-            <a class="btn btn-xs btn-warning" data-toggle="tooltip" data-placement="right" title="移动文章到废纸篓">
+            <a class="btn btn-xs btn-warning destroy-data" data-id="{{ $vo->id }}" data-toggle="tooltip" data-placement="right" title="移动文章到废纸篓">
                 <i class="glyphicon glyphicon-trash"></i>
             </a>
         </td>

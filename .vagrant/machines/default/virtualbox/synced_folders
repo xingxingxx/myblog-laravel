@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/myblog":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/myblog","hostpath":"C:/Users/xiaoxingping/project","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/xiaoxingping/project/myblog","disabled":false,"__vagrantfile":true}}}
