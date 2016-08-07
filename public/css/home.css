@@ -6551,7 +6551,7 @@ footer {
 }
 @media (max-width: 1200px) {
   .main {
-    margin-right: 10px;
+    margin-right: 0px;
   }
 }
 .mt25 {
@@ -6563,12 +6563,19 @@ footer {
 .font16 {
   font-size: 14px !important;
   line-height: 2.2;
+  word-break: break-all;
 }
 .mt-30 {
   margin-top: -30px;
 }
+.font16 div {
+  width: 100% !important;
+}
+.font16 p {
+  width: 100% !important;
+}
 .font16 img {
-  width: 100%;
+  width: 100% !important;
 }
 
 /*# sourceMappingURL=home.css.map */
