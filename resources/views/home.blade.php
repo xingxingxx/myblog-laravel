@@ -10,15 +10,18 @@
             <a class="btn btn-sm {{ ($order=='title') ? 'btn-primary': 'btn-default' }}" href="{{ url('/order/title/sign/'.$sign) }}"><i class="glyphicon glyphicon-comment"></i>&nbsp;评论最多</a>
         </p>
         @foreach ($list as $vo)
-        <h3><a href="{{ url('/articles/'.$vo->id) }}">{{$vo->title}}</a></h3>
-        <p class="font16"> {{ str_limit(strip_tags($vo->content),400)}}</p>
+        <h4><a style="color:#204d74;font-weight: bold;" href="{{ url('/articles/'.$vo->id) }}">{{$vo->title}}</a></h4>
         <p class="font16">
-            <i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{{ $vo->created_at }}
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;{{ $vo->click }}
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="glyphicon glyphicon-tags"></i>&nbsp;&nbsp;{{ $vo->sign }}
+            {{ str_limit(strip_tags($vo->content),400)}}<br>
+            <span style="color:#888;">
+                发布于{{ $vo->created_at }}
+                &nbsp;&nbsp;
+                查看{{ $vo->click }}次
+                &nbsp;&nbsp;
+                标签：{{ $vo->sign }}
+            </span>
         </p>
+
         <hr>
         @endforeach
         <nav class="text-center">

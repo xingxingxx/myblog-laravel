@@ -11,7 +11,7 @@
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">最热文章</h3>
+            <h3 class="panel-title">热门文章</h3>
         </div>
         <ul class="list-group">
             @foreach ($hot as $vo)
